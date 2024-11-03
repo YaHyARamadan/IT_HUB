@@ -36,27 +36,61 @@ class _IntroScreenState extends State<IntroScreen> {
                 width: mediaWidth,
               ),
             ),
-             SizedBox(height: mediaHeight * 0.01),
+            SizedBox(height: mediaHeight * 0.01),
             SizedBox(
               width: mediaWidth,
-              height: mediaHeight * 0.3,
+              height: mediaHeight * 0.4,
               child: PageView(
                 controller: pageController,
                 children: [
-                  Image.asset('assets/img/intro_img/Untitled-1 1.png',
-                      scale: 0.74.sp),
-                  Image.asset('assets/img/intro_img/vec2 1.png',
-                      scale: 0.74.sp),
-                  Image.asset("assets/img/intro_img/vec3 1.png", scale: 0.74.sp)
+                  Column(
+                    children: [
+                      Image.asset('assets/img/intro_img/Untitled-1 1.png',
+                          scale: 0.74.sp),
+                      SizedBox(height: mediaHeight * 0.07),
+                      CustomText(
+                          text: "IT HUB",
+                          style: MyTextStyle.lalezar24Size400Weight
+                              .copyWith(fontSize: 24, color: Colors.grey)),
+                      SizedBox(height: mediaHeight * 0.01),
+                      CustomText(
+                          text: "Explore Subjects and Materials",
+                          style: MyTextStyle.lalezar24Size400Weight
+                              .copyWith(fontSize: 20, color: Colors.grey[400]))
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Image.asset('assets/img/intro_img/vec2 1.png',
+                          scale: 0.74.sp),
+                      SizedBox(height: mediaHeight * 0.039),
+                      CustomText(
+                          text:
+                              "Stay connected to your studies anytime,\n                                    anywhere",
+                          style: MyTextStyle.lalezar24Size400Weight
+                              .copyWith(fontSize: 20, color: Colors.grey[400]))
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Image.asset('assets/img/intro_img/vec3 1.png',
+                          scale: 0.74.sp),
+                      SizedBox(height: mediaHeight * 0.1),
+                      CustomText(
+                          text: "Effortless Assignment Upload",
+                          style: MyTextStyle.lalezar24Size400Weight
+                              .copyWith(fontSize: 20, color: Colors.grey[400]))
+                    ],
+                  ),
                 ],
                 onPageChanged: (index) {
                   setState(() {
                     _pageIndex = index;
                   });
                 },
-              ), 
+              ),
             ),
-            SizedBox(height: mediaHeight * 0.1),
+            SizedBox(height: mediaHeight * 0.05),
             PageDot(pageIndex: _pageIndex),
             SizedBox(height: mediaHeight * 0.02),
             ElevatedButton(
@@ -68,9 +102,9 @@ class _IntroScreenState extends State<IntroScreen> {
                       const EdgeInsets.symmetric(horizontal: 75, vertical: 8)),
                 ),
                 child: CustomText(
-                          text: 'Login',
-                          style: MyTextStyle.kanit24Size400Weight
-                              .copyWith(color: Colors.white, fontSize: 28))),
+                    text: 'Login',
+                    style: MyTextStyle.kanit24Size400Weight
+                        .copyWith(color: Colors.white, fontSize: 28))),
             SizedBox(height: mediaHeight * 0.02),
             OutlinedButton(
                 onPressed: () {},
@@ -85,7 +119,6 @@ class _IntroScreenState extends State<IntroScreen> {
                     style: MyTextStyle.lalezar24Size400Weight
                         .copyWith(color: const Color(0xff000000)))),
             SizedBox(height: mediaHeight * 0.02),
-
           ],
         ),
       ),

@@ -8,9 +8,9 @@ import 'features/introducation_screen/intro_screen/view/intro_screen.dart';
 void main() {
   runApp(
    const MyApp(),
-  //     DevicePreview(
-  //   enabled: !kReleaseMode,
-  //   builder: (context) => const MyApp(),
+   //    DevicePreview(
+   //  enabled: !kReleaseMode,
+   //  builder: (context) => const MyApp(),
   // )
   );
 }
