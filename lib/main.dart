@@ -1,3 +1,4 @@
+import 'package:batu_nw/features/introducation_screen/splash_screen/view/splash_screen.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
             //   useMaterial3: true,
             //   scaffoldBackgroundColor: Colors.white,
             // ),
-            home: const IntroScreen(),
+            home: const SplashScreen(),
           );
         });
   }

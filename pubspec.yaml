@@ -66,6 +66,7 @@ flutter:
      - assets/img/
      - assets/img/intro_img/
      - assets/img/intro_img/Untitled-1 1.svg
+     - assets/img/splash_screen/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
