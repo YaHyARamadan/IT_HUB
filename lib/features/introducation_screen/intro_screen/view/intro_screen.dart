@@ -39,49 +39,15 @@ class _IntroScreenState extends State<IntroScreen> {
             SizedBox(height: mediaHeight * 0.01),
             SizedBox(
               width: mediaWidth,
-              height: mediaHeight * 0.4,
+              height: mediaHeight * 0.39,
               child: PageView(
-                controller: pageController,
+                // controller: pageController,
                 children: [
-                  Column(
-                    children: [
-                      Image.asset('assets/img/intro_img/Untitled-1 1.png',
-                          scale: 0.74.sp),
-                      SizedBox(height: mediaHeight * 0.07),
-                      CustomText(
-                          text: "IT HUB",
-                          style: MyTextStyle.lalezar24Size400Weight
-                              .copyWith(fontSize: 24, color: Colors.grey)),
-                      SizedBox(height: mediaHeight * 0.01),
-                      CustomText(
-                          text: "Explore Subjects and Materials",
-                          style: MyTextStyle.lalezar24Size400Weight
-                              .copyWith(fontSize: 20, color: Colors.grey[400]))
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Image.asset('assets/img/intro_img/vec2 1.png',
-                          scale: 0.74.sp),
-                      SizedBox(height: mediaHeight * 0.039),
-                      CustomText(
-                          text:
-                              "Stay connected to your studies anytime,\n                                    anywhere",
-                          style: MyTextStyle.lalezar24Size400Weight
-                              .copyWith(fontSize: 20, color: Colors.grey[400]))
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Image.asset('assets/img/intro_img/vec3 1.png',
-                          scale: 0.74.sp),
-                      SizedBox(height: mediaHeight * 0.1),
-                      CustomText(
-                          text: "Effortless Assignment Upload",
-                          style: MyTextStyle.lalezar24Size400Weight
-                              .copyWith(fontSize: 20, color: Colors.grey[400]))
-                    ],
-                  ),
+                  Image.asset('assets/img/intro_img/Component 1.png',
+                      scale: 0.74),
+                  Image.asset('assets/img/intro_img/Component 2 (1).png',
+                      scale: 0.74),
+                  Image.asset("assets/img/intro_img/Component 3.png", scale: 0.74)
                 ],
                 onPageChanged: (index) {
                   setState(() {
@@ -90,7 +56,7 @@ class _IntroScreenState extends State<IntroScreen> {
                 },
               ),
             ),
-            SizedBox(height: mediaHeight * 0.05),
+            SizedBox(height: mediaHeight * 0.03),
             PageDot(pageIndex: _pageIndex),
             SizedBox(height: mediaHeight * 0.02),
             ElevatedButton(

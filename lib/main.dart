@@ -7,11 +7,11 @@ import 'features/introducation_screen/intro_screen/view/intro_screen.dart';
 
 void main() {
   runApp(
-   const MyApp(),
-   //    DevicePreview(
-   //  enabled: !kReleaseMode,
-   //  builder: (context) => const MyApp(),
-  // )
+   // const MyApp(),
+      DevicePreview(
+    enabled: !kReleaseMode,
+    builder: (context) => const MyApp(),
+  )
   );
 }
 
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
             //   useMaterial3: true,
             //   scaffoldBackgroundColor: Colors.white,
             // ),
-            home: const SplashScreen(),
+            home: const IntroScreen(),
           );
         });
   }
