@@ -1,9 +1,7 @@
 import 'dart:async';
-
 import 'package:batu_nw/features/introducation_screen/intro_screen/view/widget/bottom_wave_clipper.dart';
 import 'package:batu_nw/features/introducation_screen/intro_screen/view/widget/dot_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/style/my_text_style.dart';
 import '../../../../core/widgets/custom_text.dart';
@@ -41,7 +39,7 @@ class _IntroScreenState extends State<IntroScreen> {
               width: mediaWidth,
               height: mediaHeight * 0.39,
               child: PageView(
-                // controller: pageController,
+                controller: pageController,
                 children: [
                   Image.asset('assets/img/intro_img/Component 1.png',
                       scale: 0.74),

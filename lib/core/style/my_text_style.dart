@@ -14,5 +14,9 @@ class MyTextStyle {
     fontSize: 24,
     fontWeight: FontWeight.w500,
   );
+  static TextStyle konkhmer40Size400Weight = GoogleFonts.konkhmerSleokchher(
+    fontSize: 40,
+    fontWeight: FontWeight.w500,
+  );
 
 }
