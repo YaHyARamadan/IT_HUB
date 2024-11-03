@@ -39,7 +39,7 @@ class _IntroScreenState extends State<IntroScreen> {
              SizedBox(height: mediaHeight * 0.01),
             SizedBox(
               width: mediaWidth,
-              height: MediaQuery.sizeOf(context).height * 0.3,
+              height: mediaHeight * 0.3,
               child: PageView(
                 controller: pageController,
                 children: [
