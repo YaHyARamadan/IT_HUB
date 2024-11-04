@@ -67,6 +67,7 @@ flutter:
      - assets/img/intro_img/
      - assets/img/splash_screen/
      - assets/img/auth_screen/
+     - assets/img/auth_screen/Ellipse 6.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

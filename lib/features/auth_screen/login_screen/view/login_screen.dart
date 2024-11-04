@@ -1,7 +1,6 @@
 import 'package:batu_nw/core/style/my_text_style.dart';
 import 'package:batu_nw/core/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/widgets/custom_text_form_field.dart';
 

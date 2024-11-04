@@ -3,16 +3,18 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'core/routes/router.dart';
+import 'core/routes/routes.dart';
 import 'features/auth_screen/login_screen/view/login_screen.dart';
 import 'features/introducation_screen/intro_screen/view/intro_screen.dart';
 
 void main() {
   runApp(
-   // const MyApp(),
-      DevicePreview(
-    enabled: !kReleaseMode,
-    builder: (context) => const MyApp(),
-  )
+      const MyApp(),
+  //     DevicePreview(
+  //   enabled: !kReleaseMode,
+  //   builder: (context) => const MyApp(),
+  // )
   );
 }
 
@@ -34,7 +36,8 @@ class MyApp extends StatelessWidget {
             theme: ThemeData.light(),
             darkTheme: ThemeData.dark(),
             title: 'Flutter Demo',
-
+            initialRoute: AppRoutes.splashScreen,
+            onGenerateRoute: onGenerate,
 
             // theme: ThemeData(
             //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

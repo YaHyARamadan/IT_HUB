@@ -3,6 +3,7 @@ import 'package:batu_nw/features/introducation_screen/intro_screen/view/widget/b
 import 'package:batu_nw/features/introducation_screen/intro_screen/view/widget/dot_page.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/routes/routes.dart';
 import '../../../../core/style/my_text_style.dart';
 import '../../../../core/widgets/custom_text.dart';
 
@@ -45,7 +46,8 @@ class _IntroScreenState extends State<IntroScreen> {
                       scale: 0.74),
                   Image.asset('assets/img/intro_img/Component 2 (1).png',
                       scale: 0.74),
-                  Image.asset("assets/img/intro_img/Component 3.png", scale: 0.74)
+                  Image.asset("assets/img/intro_img/Component 3.png",
+                      scale: 0.74)
                 ],
                 onPageChanged: (index) {
                   setState(() {
@@ -58,7 +60,9 @@ class _IntroScreenState extends State<IntroScreen> {
             PageDot(pageIndex: _pageIndex),
             SizedBox(height: mediaHeight * 0.02),
             ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed(AppRoutes.loginScreen);
+                },
                 style: ButtonStyle(
                   backgroundColor:
                       WidgetStateProperty.all(const Color(0xff11A7A4)),
@@ -71,7 +75,9 @@ class _IntroScreenState extends State<IntroScreen> {
                         .copyWith(color: Colors.white, fontSize: 28))),
             SizedBox(height: mediaHeight * 0.02),
             OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed(AppRoutes.registerScreen);
+                },
                 style: ButtonStyle(
                   side: WidgetStateProperty.all(
                       const BorderSide(color: Color(0xff11A7A4))),
